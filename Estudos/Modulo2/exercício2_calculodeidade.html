@@ -1,0 +1,19 @@
+<html>
+<body>
+    <script>
+       var anoNascimento = prompt("Por favor informe o ano do seu nascimento");
+       while(anoNascimento >= 2021){
+           alert("O ano do seu nascimento não pode ser maior que o ano atual");
+           anoNascimento = prompt("Por favor informe o ano do seu nascimento ");
+       }
+       var anoAtual = prompt("Por favor informe o ano atual");
+       while(anoAtual < anoNascimento){
+           alert("O ano do seu nascimento não pode ser maior que o ano atual");
+           anoAtual = ("Por favor informe o ano atual");
+       }  
+       var idade = anoAtual - anoNascimento;
+       console.log("A idade final é: "+idade);
+       
+    </script>
+</body>    
+</html>

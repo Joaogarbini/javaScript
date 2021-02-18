@@ -1,0 +1,47 @@
+<html>
+<body>
+    <script>
+        function testes(){
+            console.log("chamando a função testes");
+        }
+            
+        testes();
+
+        function testes2(nome,idade){
+            console.log("O nome passado é: "+nome);
+            console.log("A idade passada é: "+idade);
+            console.log("---------------------------")
+        }
+        
+        testes2("João",27)
+        testes2("Guilherme",30)
+
+        function pegarNome(parametro){
+            if(parametro == 1){
+                return "Guilherme";
+            }else{
+                return "Outro nome";
+            }
+        }
+        var nome = pegarNome(1);
+        console.log(nome);
+
+
+        // Outras formas de declarar funções
+
+        var func = function(){
+            console.log('Olá mundo');
+        }
+        
+        func();
+
+        
+        // Declarando uma função e já chamando ela
+        (function(){
+            console.log("Outra forma");
+
+        })();
+
+    </script>
+</body>    
+</html>
